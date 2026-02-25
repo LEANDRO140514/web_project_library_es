@@ -70,8 +70,10 @@ body {
   max-width: 636px;
   height: auto;
 }
-
 .header__footer {
+}
+
+.header__footer-custom {
   margin-top: 40px;
   text-align: right;
 }
@@ -151,4 +153,6 @@ body {
   font-style: italic;
   color: #555555;
   margin: 0;
+}
+.header__link {
 }
