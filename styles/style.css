@@ -71,6 +71,8 @@ body {
   height: auto;
 }
 .header__footer {
+  margin-top: 40px;
+  text-align: right;
 }
 
 .header__footer-custom {
