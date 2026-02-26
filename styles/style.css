@@ -1,7 +1,16 @@
+/* Contenedor principal */
 .page {
-  /* Agrega las propiedades de la clase page aquí */
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #ffffff;
+  color: #000000;
 }
 
+/* Encabezado */
 .header {
   display: flex;
   flex-direction: column;
@@ -9,20 +18,27 @@
   min-height: 720px;
   max-height: 800px;
   padding: 30px 80px 40px;
-  position: relative;
   box-sizing: border-box;
 }
 
+/* Navegación */
 .nav {
-  /* Agrega las propiedades flex aquí */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav__logo {
+  height: 58px;
+  width: auto;
 }
 
 .nav__links {
-  /* Restablece los estilos predeterminados de list aquí */
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
   margin: 8px 0 0;
+  padding: 0;
 }
 
 .nav__link {
@@ -31,19 +47,38 @@
   font-weight: bold;
 }
 
+/* Contenido del encabezado */
 .header__content {
-  /* Agrega las propiedades flex aquí */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 128px;
+  margin-top: 80px;
 }
 
 .header__title {
+  max-width: 635px;
+  font-size: 62px;
+  line-height: 76px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .header__description {
+  max-width: 515px;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 32px 0 0;
 }
 
 .header__image {
+  max-width: 636px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
+/* Pie del encabezado */
 .header__footer {
   margin-top: auto;
   width: 100%;
@@ -53,12 +88,73 @@
   box-sizing: border-box;
 }
 
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
-}
-
 .header__address {
   margin: 0;
   color: #838383;
+}
+
+/* Contenido principal */
+.content {
+  padding: 60px 80px;
+  box-sizing: border-box;
+}
+
+/* Sección del staff */
+.staff {
+}
+
+.staff__title {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.staff__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 40px;
+}
+
+.staff__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Tarjetas del staff */
+.card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.card__footer {
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  margin: 0;
 }
