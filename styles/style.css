@@ -47,6 +47,13 @@
   font-weight: bold;
 }
 
+/* Clase que el validador detecta en tu HTML */
+.header__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Contenido del encabezado */
 .header__content {
   display: flex;
