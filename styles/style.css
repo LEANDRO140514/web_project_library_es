@@ -259,11 +259,13 @@
   border-radius: 4px;
   font-weight: 600;
   font-size: 14px;
+  text-align: center;
 }
 
 /* --- Imagen base --- */
 .person__image {
   display: block;
+  max-width: 100%;
 }
 
 /* --- Tamaños según el brief --- */
@@ -291,8 +293,8 @@
 }
 
 .person_name_burbidge {
-  top: 125px;
-  right: 96px;
+  top: 96px;
+  right: 125px;
 }
 
 .person_name_mitchell {
